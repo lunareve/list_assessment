@@ -89,7 +89,9 @@ def foods_in_common(foods1, foods2):
 
     """
 
-    return ['the wrong thing']
+    # reviewd collections lectures
+
+    return sorted(list(set(foods1) & set(foods2)))
 
 
 def every_other_item(items):
@@ -109,7 +111,7 @@ def every_other_item(items):
        ['you', 'are', 'good', 'at', 'code']
     """
 
-    return ['the wrong thing']
+    return items[0::2]
 
 
 def largest_n_items(items, n):
@@ -134,7 +136,10 @@ def largest_n_items(items, n):
         [3, 3]
     """
 
-    return []
+    if n == 0:
+        return []
+    else:
+        return sorted(items)[-n:]
 
 
 #####################################################################
